@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demogods
+spec:
+  selector:
+    matchLabels:
+      app: demogods
+  template:
+    metadata:
+      labels:
+        app: demogods
+    spec:
+      containers:
+      - name: demogods
+        image: quay.io/frankgreco/demogods:6b9b70db27cd3d127e15052ec16b71617dc1bd27
+        ports:
+        - containerPort: 8080
+        - containerPort: 9000
+        resources:
+          requests:
+            cpu: 100m
