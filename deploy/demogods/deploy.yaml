@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demogods
-        image: quay.io/frankgreco/demogods:78d73c857b48323b9b7da770b39df6e179661ac2
+        image: quay.io/frankgreco/demogods:c0d83c0d01d20553ab3c25f07bd3b220483b438b
         ports:
         - containerPort: 8080
         - containerPort: 9000
