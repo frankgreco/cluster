@@ -9,4 +9,4 @@ spec:
   ports:
   - name: application
     port: 8080
-  type: NodePort
+  type: ClusterIP
